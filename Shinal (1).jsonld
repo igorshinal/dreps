@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Shinal"
+    },
+    "motivations": {
+      "@value": "I want to be a DRep because I am passionate about contributing to the decentralized future of Cardano and empowering the community to shape its direction. My professional experience as a programmer and my deep interest in blockchain technology equip me to analyze proposals critically and provide valuable insights. Personally, I am motivated by the opportunity to promote fairness, innovation, and collaboration in decentralized governance."
+    },
+    "objectives": {
+      "@value": " I believe in the power of decentralized governance to create a fair and transparent ecosystem for all. My goal as a DRep is to actively represent the interests of the community, contribute to meaningful decisions, and promote the sustainable growth of the Cardano blockchain."
+    },
+    "paymentAddress": {
+      "@value": "addr1qxsezy94zdqn58yzx2aywm9aw3756nv7keyeqeu4f59fc6ctnntnlq5u6kkey36pccw79agsu77xcrvd5h3j9syjcd2s6td4wc"
+    },
+    "qualifications": {
+      "@value": "12 years of experience as a programmer, with a focus on building robust systems and understanding complex technologies.\nStrong knowledge of blockchain technology, including staking, governance mechanisms, and decentralized applications (dApps).\nActive participant in the Cardano ecosystem, with hands-on experience in staking and supporting decentralization initiatives.\nAnalytical and decision-making skills, honed through years of working on large-scale projects and evaluating technical solutions.\nCommitment to fairness and transparency, ensuring that community interests are always prioritized in decision-making."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Linkedin"
+        },
+        "uri": {
+          "@value": "https://www.linkedin.com/in/igorshinal"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Github"
+        },
+        "uri": {
+          "@value": "https://github.com/igorshinal"
+        }
+      }
+    ]
+  }
+}
